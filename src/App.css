@@ -28,10 +28,123 @@
   color: #61dafb;
 }
 
+.container {
+  display: flex;
+}
+
+.data-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.verify-section {
+  flex: 1;
+}
+
+.start-button {
+  background-color: #0d56a4;
+  /* Blue color */
+  color: white;
+  padding: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  transition: background-color 0.3s ease;
+  margin: 300px 0px 0px 0px;
+  box-shadow: 0 2px 4px black;
+}
+
+.restart-button {
+  background-color: #0d56a4;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px black;
+  margin-left: 650px;
+}
+
+.pokemon-list {
+  text-align: center;
+}
+
+.pokemon-card {
+  border: 1px solid #ddd;
+  /* border-radius:  5px; */
+  padding: 10px;
+  /* box-shadow: 0 2px 4px black; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.silhouette-image {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 30px 30px 30px 100px;
+  filter: invert(1) brightness(0) contrast(100%);
+  /* box-shadow: 0 1px 1px black;  */
+}
+
+.original-image {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 30px 30px 30px 150px;
+}
+
+/* .box-size {
+  max-height: 1000px !important;
+} */
+
+.custom-button {
+  background-color: #0d56a4;
+  /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px black;
+}
+
+.custom-button[disabled] {
+  background-color: #262249;
+  color: #b3afaf;
+  cursor: not-allowed;
+}
+
+.custom-button:hover {
+  background-color: #0d56a4;
+  /* Darker shade of blue on hover */
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 0px 0px 160px;
+}
+
+.custom-button+.custom-button {
+  margin-left: 10px;
+  /* Add margin between buttons */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
